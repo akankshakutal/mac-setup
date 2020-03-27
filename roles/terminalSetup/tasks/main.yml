@@ -1,0 +1,10 @@
+---
+- name: install homebrew
+  shell: 'yes | /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"' 
+  args:
+    creates: /usr/local/bin/brew
+    
+- name: install vim 
+  homebrew:
+    name: vim 
+    state: latest

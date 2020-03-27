@@ -1,0 +1,6 @@
+---
+
+- name: install chrome 
+  homebrew_cask:
+    name: google-chrome 
+    state: installed 
