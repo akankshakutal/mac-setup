@@ -4,3 +4,33 @@
   homebrew_cask:
     name: google-chrome 
     state: installed 
+
+- name: install VSCode 
+  homebrew_cask:
+    name: visual-studio-code 
+    state: installed 
+
+- name: install iterm2 
+  homebrew_cask:
+    name: iterm2 
+    state: installed 
+
+- name: install slack 
+  homebrew_cask:
+    name: slack 
+    state: installed 
+  
+- name: install intellij-idea-ce 
+  homebrew_cask:
+    name: intellij-idea-ce 
+    state: installed
+
+- name: install JAVA
+  homebrew_cask:
+    name: java
+    state: installed
+
+- name: install zoomus
+  homebrew_cask:
+    name: zoomus
+    state: installed  
