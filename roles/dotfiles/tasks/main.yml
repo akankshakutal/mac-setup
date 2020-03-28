@@ -1,0 +1,42 @@
+---
+
+- name: setting up my dotfiles
+  git:
+    repo: https://github.com/akankshakutal/dotfiles.git
+    dest: /tmp/dotfiles/
+
+- name: zshrc file
+  copy:
+    src: /tmp/dotfiles/zshrc 
+    dest: "~/.zshrc"
+
+- name: vimrc file
+  copy:
+    src: /tmp/dotfiles/vimrc
+    dest: "~/.vimrc"
+
+- name: gitconfig file
+  copy:
+    src: /tmp/dotfiles/gitconfig
+    dest: "~/.gitconfig"
+
+- name: vsode settings file
+  copy:
+    src: /tmp/dotfiles/vscode/settings.json
+    dest: "~/Library/Application\ Support/Code/User/settings.json"
+
+- name: vsode snippet file
+  copy:
+    src: /tmp/dotfiles/vscode/javascript.json
+    dest: "~/Library/Application\ Support/Code/User/javascript.json"
+
+- name: vsode keybindings file
+  copy:
+    src: /tmp/dotfiles/vscode/keybindings.json
+    dest: "~/Library/Application\ Support/Code/User/keybindings.json"
+
+- name: profiles file
+  copy:
+    src: /tmp/dotfiles/profiles.clj
+    dest: "~/.lein/profiles.clj"
+
